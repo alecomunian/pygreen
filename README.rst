@@ -1,9 +1,7 @@
-Template for the Read the Docs tutorial
+PyGreen project
 =======================================
 
-This GitHub template includes fictional Python library
-with some basic Sphinx docs.
+This GitHub repository includes the source files of the documentation and some examples related to the PyGreen project. 
+The documentation can be found at the following link:
 
-Read the tutorial here:
-
-https://docs.readthedocs.io/en/stable/tutorial/
+https://bla bla.
