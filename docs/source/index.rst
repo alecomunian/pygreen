@@ -3,6 +3,14 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
+.. warning:: This is a DRAFT VERSION
+
++----------------------------------+-----------------------------------+-------------------------------------+
+| .. image:: _images/logo_EU.png   | .. image:: _images/logo_MUR.png   | .. image:: _images/logo_domani.png  |
++----------------------------------+-----------------------------------+-------------------------------------+
+
+
+	     
 +---------------+--------------------------------------+-------------------------------------+-------------------------------------+
 | |logo_unimi|  | .. image:: _images/logo_polimi.png   | .. image:: _images/logo_unitn.png   | .. image:: _images/logo_uniud.png   |
 +---------------+--------------------------------------+-------------------------------------+-------------------------------------+
@@ -14,8 +22,8 @@ PyGreen Python tutorials
 
 **Version** Last change: |today|
 
-This documentation contains a collection of the tutorials presented
-during the short school
+This documentation contains a collection of tutorials presented during
+the short school
 
     *PyGreen –PYthon tools for the GREEN transition*
 

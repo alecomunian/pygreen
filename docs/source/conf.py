@@ -7,7 +7,7 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'pygreen'
-copyright = '2025, the PyGreen Team'
+copyright = 'the PyGreen Team - This documentation is released under the GNU GPL v3'
 author = 'the PyGreen Team'
 release = '0'
 
