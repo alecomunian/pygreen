@@ -158,3 +158,5 @@ cython_debug/
 
 # Some emacs and editors backup files
 *~
+docs/source/_notebooks/.ipynb_checkpoints
+docs/source/_notebooks/.virtual_documents
