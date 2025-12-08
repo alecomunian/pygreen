@@ -35,7 +35,7 @@ the short school
 
    _notebooks/intro1
    intro2
-   intro3
+   _notebooks/intro3
    _notebooks/intro4
    eco_hydro
    forest
