@@ -563,7 +563,7 @@ job**.
     that work together.
 
 
-.. image:: /_images/inheritance_composition.png
+.. image:: /_images/composition_inheritance.png
    :alt: Composition and Inheritance diagram
    :width: 800px
    :align: left
