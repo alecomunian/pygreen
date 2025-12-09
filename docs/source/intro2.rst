@@ -514,6 +514,96 @@ referring to.
 💡 You **do not** pass ``self`` manually when calling a method — Python
 does it automatically.
 
+.. code-block:: python
+
+   # Define the class
+   class Dog:
+       """A simple model of a dog."""
+
+       # ---- Class Attribute (shared by all dogs) ----
+       species = "Canis familiaris"
+
+       def __init__(self, name, age, friendly=True):
+           """
+           Initialize the dog's attributes.
+           - name and age are instance attributes (unique to each dog)
+           - friendly has a default value (True unless overridden)
+           """
+           self.name = name
+           self.age = age
+           self.friendly = friendly
+
+       # ---- Instance Methods (behaviors) ----
+       def sit(self):
+           """Simulate the dog sitting."""
+           print(f"{self.name} is now sitting.")
+
+       def roll_over(self):
+           """Simulate the dog rolling over."""
+           print(f"{self.name} rolled over!")
+
+   # Creating "Dog" objects (instances)
+   my_dog = Dog("Willie", 6)                # friendly defaults to True
+   your_dog = Dog("Lucy", 3, friendly=False)
+
+.. code-block:: python
+
+   # Using attributes and methods
+   print(my_dog.name, my_dog.age, my_dog.friendly)
+   print(your_dog.name, your_dog.age, your_dog.friendly)
+
+   my_dog.sit()
+   your_dog.roll_over()
+
+Methods often use the object’s internal data (stored in attributes) to perform actions.
+
+.. code-block:: python
+
+   # Accessing class attribute
+   print(my_dog.species)
+   print(your_dog.species)
+
+.. code-block:: python
+
+   class Dog:
+       def __init__(self, name, age):
+           self.name = name
+           self.age = age
+
+       def birthday(self):
+           """Increase the dog's age by 1."""
+           self.age += 1
+           print(f"{self.name} is now {self.age} years old!")
+
+       def describe(self):
+           """Print a description using the dog's attributes."""
+           print(f"{self.name} is {self.age} years old.")
+
+.. code-block:: python
+
+   dog = Dog("Willie", 6)
+   dog.describe()     # Willie is 6 years old.
+   dog.birthday()     # Willie is now 7 years old!
+
+Methods can accept extra parameters, just like regular functions.
+
+.. code-block:: python
+
+   class Dog:
+       def __init__(self, name):
+           self.name = name
+
+       def speak(self, sound):
+           """Make the dog speak with a custom sound."""
+           print(f"{self.name} says: {sound}!")
+
+.. code-block:: python
+
+   dog = Dog("Lucy")
+   dog.speak("Woof")      # Lucy says: Woof!
+   dog.speak("Grrrr")     # Lucy says: Grrrr!
+
+
 Inheritance and Composition
 ===========================
 
@@ -567,6 +657,51 @@ job**.
    :alt: Composition and Inheritance diagram
    :width: 800px
    :align: left
+
+.. code-block:: python
+
+   # Inheritance Example: Animal → Dog
+   class Animal:
+       def __init__(self, name):
+           self.name = name
+
+       def eat(self):
+           print(f"{self.name} is eating.")
+
+   # Dog inherits from Animal
+   class Dog(Animal):
+       def bark(self):
+           print(f"{self.name} says: Woof!")
+
+   # Usage
+   dog = Dog("Max")
+   dog.eat()    # inherited from Animal
+   dog.bark()   # defined in Dog
+
+
+.. code-block:: python
+
+   # Composition Example: Dog with a Collar Object
+   class Collar:
+       def __init__(self, color, size):
+           self.color = color
+           self.size = size
+
+
+   class Dog:
+       def __init__(self, name, age, collar):
+           self.name = name
+           self.age = age
+           self.collar = collar   # Dog owns a Collar object
+
+       def show_collar(self):
+           print(f"{self.name}'s collar is {self.collar.color}, size {self.collar.size}.")
+
+   # usage
+   c = Collar("red", "M")
+   dog = Dog("Bella", 4, c)
+   dog.show_collar()
+
 
 Python Packages
 ===============
