@@ -641,7 +641,7 @@ simple:
    Ask: *What other methods does this object have? What does it return?*
 
 
-.. image:: /_images/python_package_components.png
+.. image:: /_images/package_components.png
    :alt: Python package components diagram
    :width: 500px
    :align: center
