@@ -51,7 +51,7 @@ In Python, we define a function using ``def``. A function has:
 4. **Return value** → the output (optional)  
 5. **Docstring** → description of what the function does (optional)
 
-.. image:: https://drive.google.com/uc?export=view&id=1ufEOIclvmQFVp0Q5DFyYBeEpcwqYt0oF
+.. image:: _images/function.definition.png
    :alt: Python function
    :width: 600px
    :align: left
